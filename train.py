@@ -30,7 +30,7 @@ with open("metrics.txt", "w") as outfile:
     outfile.write(metrics)
 
 # Plot it
-#disp = plot_confusion_matrix(clf, X_test, y_test, normalize="true", cmap=plt.cm.Blues)
-disp = ConfusionMatrixDisplay(clf, X_test, y_test, normalize="true", cmap=plt.cm.Blues)
+#disp = plot_confusion_matrix(confusion_matrix=clf, X_test, y_test)
+disp = ConfusionMatrixDisplay(confusion_matrix=clf)
 
 plt.savefig("plot.png")
