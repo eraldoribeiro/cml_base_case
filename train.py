@@ -31,6 +31,16 @@ with open("metrics.txt", "w") as outfile:
 
 # Plot it
 #disp = plot_confusion_matrix(confusion_matrix=clf, X_test, y_test)
-disp = ConfusionMatrixDisplay(confusion_matrix=clf)
 
-plt.savefig("plot.png")
+#disp = ConfusionMatrixDisplay(confusion_matrix=cm,
+#                              display_labels=display_labels)
+
+
+# NOTE: Fill all variables here with default values of the plot_confusion_matrix
+#disp = disp.plot(include_values=include_values,
+#                 cmap=cmap, ax=ax, xticks_rotation=xticks_rotation)
+
+#disp = ConfusionMatrixDisplay(confusion_matrix=clf)
+#disp.plot(ax=ax, cmap=c)
+
+#plt.savefig("plot.png")
